@@ -1,0 +1,74 @@
+.footer__background{
+    background-image: url('../images/footer.png');
+    position: relative;
+    z-index: 1;
+    height: 444px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.footer__contacts{
+    text-align: center;
+    margin-top: 150px;
+}
+.contacts-name{
+    color: #93979F;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.contacts-text{
+    font-family: "Philosopher", sans-serif;
+    font-size: 20px;
+}
+.footer__contacts-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.footer__buttons{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.footer-button{
+    font-size: 13px;
+    width: 260px;
+}
+.footer__socials{
+    display: flex;
+    align-items: center;
+    width: 60px;
+}
+.footer__buttons-icon{
+    margin: 0 10px;
+}
+
+.footer__buttons-icon{
+    cursor: pointer;
+}
+@media screen and (max-width:400px){
+    .footer__contacts-list{
+        flex-direction: column;
+    }
+    .footer__socials{
+        flex-direction: column;
+    }
+    .footer__contacts-item{
+        margin: 10px 0;
+    }
+    .footer__buttons-icon{
+    width: 45px;
+    height: 45px;
+    }
+    .footer__buttons{
+        display: flex;
+        justify-content: space-between;
+        margin: 0px auto;
+        margin-bottom: 40px;
+    }
+    .footer-button{
+        margin-top: 10px;
+    }
+}

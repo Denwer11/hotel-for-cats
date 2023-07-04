@@ -1,0 +1,312 @@
+.modal__block{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.modal__radio{
+    display: flex;
+    flex-direction: row;
+}
+.modal__form-input{
+    margin: 0 0 50px 0;
+    padding: 30px 0px;
+    border: none;
+    border-radius: 5px;
+    -webkit-box-shadow:inset 0 2px 5px 0,25 #000;
+       -moz-box-shadow:inset 0 2px 5px 0,25 #000;
+            box-shadow:inset 0 2px 5px 0,25 #000;
+
+    background: white;
+    font-size: 24px;
+    width: 410px;
+}
+
+.modal__form-input::placeholder{
+    font-size: 24px;
+    color: #93979F;
+    text-align: center;
+}
+.modal__radio-text{
+    font-weight: light;
+    font-size: 11px;
+    margin-left: 10px;
+    margin-top: 17px;
+}
+.modal__radio-text span {
+    text-decoration: underline;
+
+}
+.modal__radio-round{
+    border: none;
+    padding: 3px;
+margin-top: 14px;
+cursor:pointer;
+}
+
+.modal__radio-round {
+    width: 0.8em;
+    height: 0.8em;
+    background-color: white;
+    border-radius: 50%;
+    vertical-align: middle;
+    appearance: none;
+    -webkit-appearance: none;
+    outline: none;
+    cursor: pointer;
+    box-shadow: 0px 5px 15px rgba(207,207,207, 0.25);
+}
+
+.modal__radio-round:checked {
+    width: 0.35em;
+    height: 0.35em;
+    background-color: #EB9F4D;
+    border: 3.5px solid white;
+}
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(3px);
+    z-index: 998;
+  }
+.modal {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 1245px;
+    padding: 1em 3em 3em 7em;
+    min-height: 250px;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    margin-left: -750px;
+    margin-top: -350px;
+    border-radius: 50px;
+    z-index: 999;
+    border: 20px solid white;
+    background-color: #F1F1F2;
+    background-image: url('../images/background.png');
+    background-repeat: repeat;
+    
+  }
+  .hidden {
+    display: none;
+  }
+
+  .btn-close{
+    background: none;
+    border: none;
+    box-shadow: none;
+    position: absolute;
+    left: 37%;
+  }
+.modal__call{
+    width: 480px;
+    padding-top: 40px;
+}
+  .modal__call-form{
+    text-align: center;
+    margin: 0 auto;
+  }
+
+.modal-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 40px;
+
+}
+.modal__form-button{
+    padding: 10px 52px;
+    font-size: 18px;
+}
+
+.modal__call-title{
+    font-size: 45px;
+}
+
+.modal__call-text{
+    font-size: 20px;
+    font-weight: 600;
+}
+.rooms-background.booking{
+    z-index: -2;
+    top: 140px;
+  }
+  .rooms__background.booking{
+    height: 440px;
+  }
+.rooms-price.booking{
+padding-bottom: 30px;
+}
+.modal__block-img{
+    margin-left: 50px;
+}
+.modal__form-input.booking::placeholder{
+    font-size: 18px;
+}
+.modal__form-input.booking{
+    padding: 0;
+margin-bottom: 30px;
+width: 400px;
+height: 70px;
+font-size: 18px;
+}
+.modal__form-button.booking{
+    font-size: 18px;
+}
+.modal.booking {
+    top: 40%;
+    left: 60%;
+}
+
+@media screen and (max-width:1285px){
+    .modal__block-img {
+        display: none;
+    }
+    .modal{
+        left: 20%;
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width:1285px){
+    .modal__block-img.booking{
+        display: block;
+    }
+    .modal.booking{
+        left: 1%;
+    }
+}
+
+@media screen and (max-width:1200px){
+    .modal__block-img.booking{
+        display: none;
+    }
+    .modal.booking{
+        left: 20%;
+    }
+}
+
+@media screen and (max-width:900px){
+    .modal.booking{
+        left: 10%;
+    }
+}
+@media screen and (max-width:600px){
+    .modal.booking{
+        left: 1%;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .modal{
+        padding: 10px;
+        max-width: 435px;
+    }
+    .modal.booking{
+        max-width: 600px;
+    }
+    .modal-form {
+        padding-top: 20px;
+    }
+    .modal__call-title {
+        font-size: 28px;
+        max-width: 90%;
+         text-align: center;
+    }
+    .modal__form-input {
+        padding: 15px;
+        margin-bottom: 20px;
+        max-width: 90%;
+        font-size: 20px;
+        width: 325px;
+        margin-left: 50px;
+    }
+    .modal__call-text {
+        font-size: 14px;
+        text-align: center;
+        max-width: 90%;
+    }
+    .modal__call-title.booking {
+        margin-left: 20px;
+    }
+    .modal__call-text.booking {
+        margin-left: 20px;
+    }
+    .modal__form-button {
+        width: 30em;
+        padding: 0;
+        font-size: 12px;
+        margin-left: 50px;
+        height: 4em;
+    }
+    .modal__form-button.booking {
+        width: 20em;
+    }
+    .modal__radio {
+        margin-left: 70px;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .modal{
+        left: 5%;
+        padding: 10px;
+        max-width: 300px;
+    }
+    .modal.booking{
+        max-width: 330px;
+    }
+    .modal-form {
+        padding-top: 20px;
+    }
+    .modal__call-title {
+        font-size: 28px;
+        max-width: 64%;
+         text-align: center;
+    }
+    .modal__form-input {
+        padding: 15px;
+        margin-bottom: 20px;
+        margin-left: 20px;
+        max-width: 50%;
+    }
+    .modal__form-input.booking {
+        width: 400px;
+        height: 60px;
+        max-width: 60%;
+    }
+    .modal__call-text {
+        font-size: 14px;
+        text-align: center;
+        margin: 50px 0px;
+        max-width: 64%;
+    }
+    .modal__form-button {
+        padding: 10px;
+        font-size: 12px;
+        width: 260px;
+        height: 30px;
+        margin-left: 15px;
+    }
+    .modal__form-button.booking {
+        font-size: 11px;
+        width: 270px;
+    }
+    .modal__radio {
+        display: flex;
+        align-items: center;
+        margin-left: 45px;
+        margin-bottom: 60px;
+        max-width: 250px;
+    }
+    .modal__radio-text {
+        text-align: start;
+    }
+}

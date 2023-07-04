@@ -1,0 +1,133 @@
+.staff-list{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+}
+.staff-background{
+    position: absolute;
+    background-color: white;
+    border-radius: 20px;
+    width: 285px;
+    text-align: center;
+    height: 70px;
+    align-items: center;
+    margin-left: 60px;
+    bottom: 125px;
+}
+.staff-name{
+    font-size: 20px;
+    font-family: 'Philosopher';
+    padding-top: 10px;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+.staff-post{
+    font-size: 14px;
+    color: #93979F;
+    padding-bottom: 20px;
+}
+.staff-img{
+    max-width: 368px;
+    max-height: 527px;
+}
+.staff-item{
+    background: linear-gradient(
+        180deg,
+        rgba(252, 204, 132, 0.4) 0%,
+        #fdaa4e 100%
+      );
+      border-radius: 50px;
+      height: 525px;
+      margin: 150px 10px;
+      width: 410px;
+}
+.slider-button{
+    position: absolute;
+    top:0px;
+    z-index: 5;
+    margin-left: 300px;
+}
+.prev_button{
+    margin-left: 350px;
+}
+.next_button{
+    margin-left: 250px;
+}
+.owl-nav{
+    height: 0;
+}
+@media screen and (max-width:768px){
+    .staff-item{
+        width: 230px;
+        height: 320px;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+    .staff-name{
+        font-size: 15px;
+    }
+    .staff-post{
+        font-size: 10px;
+    }
+    .staff-background {
+        width: 160px;
+        text-align: center;
+        height: 50px;
+        margin-left: 45px;
+        bottom: 0px;
+    }
+    .slider-button{
+        margin-left: 300px;
+        width: 55px;
+        height: 55px;
+        top: 0px;
+    }
+    .prev_button{
+        margin-left: -65px;
+        margin-top: 160px;
+    }
+    .next_button{
+        margin-left: 480px;   
+        margin-top: 150px;
+    }
+    .staff-list{
+        padding-top: 20px;
+    }
+}
+@media screen and (max-width:400px){
+    .staff-item{
+        width: 250px;
+        height: 350px;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+    .staff-name{
+        font-size: 14px;
+    }
+    .prev_button{
+        margin-left: 0px;
+        margin-top: 160px;
+    }
+    .next_button{
+        margin-left: 320px;   
+        margin-top: 150px;
+    }
+    .staff-post{
+        font-size: 9px;
+    }
+    .staff-background {
+        width: 170px;
+        text-align: center;
+        height: 50px;
+        margin-left: 45px;
+        bottom: 0px;
+    }
+    .staff-list{
+        padding-top: 0px;
+    }
+    .slider-button{
+        display: none;
+    }
+}

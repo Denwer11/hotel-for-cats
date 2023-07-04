@@ -1,0 +1,136 @@
+.questions-list{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.questions-col{
+    width: 520px;
+}
+
+.questions__problem{
+    background-color: white;
+    width: 520px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    min-height: 100px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+}
+.questions-item{
+    margin: 30px 0;
+    display: flex;
+    transform: translateY(-150%);
+  animation: ani 1s forwards;
+}
+@keyframes ani {
+    0% {transform: translateY(-150%);}
+    100% {transform: translateY(0);}
+  }
+.questions__problem-round{
+border-radius: 50%;
+border-bottom: 5px solid #eb9f4d;
+background: linear-gradient(
+    180deg,
+    rgba(255, 219, 166, 1) 0%,
+    #fdaa4e 100%);
+width: 55px;
+height: 50px;
+}
+.questions__problem-icon{
+margin: 15px;
+width: 25px;
+height: 30px;
+}
+.questions__answer{
+    flex-shrink: 0;
+    display: none;
+}
+.questions__problem-text{
+    flex-basis: 85%;
+}
+
+.questions__title{
+    padding-top: 100px;
+}
+
+.active-answer{
+    display: flex;
+    margin: 30px 20px;
+    font-size: 14px;
+    font-weight: normal;
+   width: 80%;
+}
+
+.active-pr-txt{
+    padding-top: 26px;
+}
+.active-pr-icon{
+    margin-top: 15px;
+
+}
+.active-pr-round{
+    margin-top: 23px;
+}
+@media screen and (max-width:768px){
+    .questions-col{
+        width: 25em;
+    }
+    .questions__problem-round{
+        width: 35px;
+        height: 30px;
+    }
+    .questions__problem-icon{
+        width: 16px;
+        height: 19px;
+        margin: 10px;
+    }
+    .questions__problem-text{
+        font-size: 14px;
+    }
+    .questions-list{
+       margin: 0 12px;
+    }
+    .questions__title {
+        font-size: 48px;
+    }
+}
+@media screen and (max-width:400px){
+    .questions-col{
+        width: 24em;
+    }
+    .questions-list{
+        flex-direction: column;
+        
+    }
+    .questions__title {
+        font-size: 32px;
+        padding-bottom: 15px;
+      }
+    .questions__problem-round{
+        width: 45px;
+        height: 40px;
+    }
+    .questions__problem-icon{
+        width: 25px;
+        height: 25px;
+        margin: 10px;
+    }
+    .questions__problem-text{
+        font-size: 14px;
+    }
+    }
+
+    @media screen and (max-width:715px){
+
+        .questions-list{
+            flex-direction: column;
+            align-items: center;
+        }
+
+        }

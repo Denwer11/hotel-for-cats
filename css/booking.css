@@ -1,0 +1,180 @@
+.booking__block{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.booking__call{
+    text-align: center;
+}
+.booking__radio{
+    display: flex;
+    flex-direction: row;
+    margin-left: 30px;
+}
+.booking__call-text{
+    font-size: 24px;
+    margin: 0px 40px;
+}
+
+.booking__call-number{
+    font-size: 40px;
+    margin: 80px 40px;
+    font-family: "Philosopher", sans-serif;
+}
+.booking-button{
+    font-size: 18px;
+    width: 410px;
+    height: 85px;
+}
+.booking__form-input{
+    margin: 0 0 50px 0;
+    padding: 30px 65px;
+    border: none;
+    border-radius: 5px;
+    -webkit-box-shadow:inset 0 2px 5px 0,25 #000;
+       -moz-box-shadow:inset 0 2px 5px 0,25 #000;
+            box-shadow:inset 0 2px 5px 0,25 #000;
+
+    background: white;
+    font-size: 24px;
+}
+
+.booking__form-input::placeholder{
+    font-size: 24px;
+    color: #93979F;
+}
+.booking__radio-text{
+    font-weight: 200;
+    font-size: 11px;
+    margin-left: 10px;
+    margin-top: 17px;
+}
+.booking__radio-text span {
+    text-decoration: underline;
+
+}
+.booking__radio-round{
+    border: none;
+    padding: 3px;
+margin-top: 15px;
+cursor:pointer;
+}
+
+.booking__socials-icon{
+    width: 50px;
+    height: 50px;
+    margin: 0 5px;
+}
+.booking__socials{
+    text-align: left;
+    margin: 10px 35px;
+    margin-left: 20px;
+}
+
+.booking__socials-icon .first-icon{
+    margin-left: 0;
+}
+
+.booking__radio-round {
+    width: 1em;
+    height: 1em;
+    background-color: white;
+    border-radius: 50%;
+    vertical-align: middle;
+    appearance: none;
+    -webkit-appearance: none;
+    outline: none;
+    cursor: pointer;
+    box-shadow: 0px 5px 15px rgba(207,207,207, 0.25);
+}
+
+.booking__radio-round:checked {
+    width: 0.4em;
+    height: 0.4em;
+    background-color: #EB9F4D;
+    border: 4px solid white;
+}
+.booking__socials-icon{
+    cursor: pointer;
+}
+
+@media screen and (max-width:768px){
+    .booking__img-cat{
+        width: 30em;
+        height: 25em;
+    }
+    
+    .booking__call-text{
+        font-size: 18px;
+    }
+    
+    .booking__call-number{
+        font-size: 30px;
+        margin: 30px 20px;
+    }
+    .booking-button{
+        font-size: 16px;
+        padding: 25px 60px;
+        width: auto;
+        height: auto;
+    }
+
+    .booking__form-input{
+        padding: 20px 25px;
+        text-align: center;
+        margin-bottom: 30px;
+        font-size: 20px;
+    }
+    .booking__radio-text{
+        text-align: start;
+    }
+}
+
+@media screen and (max-width:400px){
+    .booking__block{
+      flex-direction: column;
+    }
+    .booking__img-cat{
+        width: 400px;
+        height: 350px;
+    }
+    .booking__form-input{
+        padding: 30px 25px;
+        border: none;
+        width: 300px;
+        margin: 30px auto; 
+    }
+    .booking__radio{
+        margin-left: 55px;
+    }
+    .booking-button{
+        font-size: 18px;
+        padding: 30px 30px;
+        width: 300px;
+        margin: 0 auto;
+        height: auto;
+    }
+    .booking__socials{
+        margin-left: 55px;
+    }
+    .booking__call-text{
+        font-size: 20px;
+        margin-top: 30px;
+    }
+    .booking__call-number{
+        margin: 70px 0px;
+    }
+    .booking__form-input{
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:715px){
+    .booking__block{
+        flex-direction: column;
+      }
+      .booking__call-form{
+        display: flex;
+        flex-direction: column;
+      }
+}

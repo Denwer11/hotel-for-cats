@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Кот Семён | Гостиница для кошек</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Philosopher&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<link rel="icon" type="image/x-icon" href="./icons/logo.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <head>
+    <body>
+        <div class="background">
+            <div class="container">
+                <header class="header">
+                    <a href="" class="hamburger">
+                        <span class="hamburger__plank"></span>
+                        <span class="hamburger__plank"></span>
+                        <span class="hamburger__plank"></span>
+                    </a>
+                    <div class="header__main">
+                        <div class="header__logo">
+                            <img src="icons/logo.svg" alt="Логотип" class="header__logo__icon" />
+                            <img src="icons/separator.svg" alt="Разделитель" class="header__logo__separator" />
+                            <div class="header__logo-text">Отель для кошек</div>
+                        </div>
+                        <div class="header__call">
+                            <div class="header__call-block">
+                                <img src="icons/call.svg" alt="Телефон" class="call__icon" />
+                                <div class="header__call-number">+7 (999) 999-99-99</div>
+                            </div>
+                            <div class="header__call-text">Звонок бесплатный</div>
+                        </div>
+                        <button class="header__button btn-modal">Заказать звонок</button>
+                    </div>
+
+                    <nav class="header__menu header__menu--vertical">
+                        <ul class="header__menu-list">
+                            <li class="header__tabs-item">
+                                <a href="#advantages" class="header__tabs-link scroll-to">Преимущества</a>
+                            </li>
+                            <li class="header__tabs-item">
+                                <a href="#rooms" class="header__tabs-link scroll-to">Номера</a>
+                            </li>
+                            <li class="header__tabs-item">
+                                <a href="#staff" class="header__tabs-link scroll-to">Персонал</a>
+                            </li>
+                            <li class="header__tabs-item">
+                                <a href="#questions" class="header__tabs-link scroll-to">Вопросы и ответы</a>
+                            </li>
+                            <li class="header__tabs-item">
+                                <a href="#booking" class="header__tabs-link scroll-to">Контакты</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </header>
+
+                <section class="preview" id="preview">
+                    <h1 class="preview-title">
+                        Гостиница для кошек “Кот Семён”
+                    </h1>
+                    <div class="preview__block">
+                        <div class="preview__block-left">
+                            <p class="preview__block-description">Организуйте для любимца семьи домашний уют и комфорт, хорошее питание и быт, когда вас не будет рядом.</p>
+                            <button class="preview__block-button btn-modal">Согласовать условия размещения</button>
+                        </div>
+                        <div class="preview__img">
+                            <img src="images/cat-preview.png" alt="Кот" class="preview__img-cat" />
+                        </div>
+                    </div>
+                </section>
+
+                <section class="room" id="room">
+                    <div class="room__img">
+                    <img src="images/room.png" alt="Номер в гостинице" class="room__img-back" />
+                </div>
+                    <ul class="room__buttons">
+                        <li class="room__buttons-btn one">
+                            <div class="room__buttons-background">
+                                <p class="room__buttons-cross">+</p>
+                                <img src="./icons/camera.svg" alt="камера" class="room__buttons-icon">
+                                <div class="room__buttons-text">
+                                    <div class="room__buttons-title">Видеокамера</div>
+                                    <p class="room__buttons-description">Наблюдайте за питомцем в любое время суток: нужен только смартфон с доступом в интернет.</p>
+                                
+                                </div>
+                            </div>
+                        </li>
+                        <li class="room__buttons-btn two">
+                            <div class="room__buttons-background">
+                                <p class="room__buttons-cross">+</p>
+                                <img src="./icons/shield.svg" alt="" class="room__buttons-icon">
+                                <div class="room__buttons-text">
+                                    <div class="room__buttons-title">Закаленное стекло</div>
+                                    <p class="room__buttons-description">Стекло самый гигиеничный материал: не впитывает запахи и легко моется, и дает обзор 360 градусов</p>
+                                    
+                                </div>
+                            </div>
+                        </li>
+                        <li class="room__buttons-btn three">
+                            <div class="room__buttons-background">
+                                <p class="room__buttons-cross">+</p>
+                                <img src="./icons/cat.svg" alt="" class="room__buttons-icon">
+                                <div class="room__buttons-text">
+                                    <div class="room__buttons-title">Довольный кот
+                                    </div>
+                                    <p class="room__buttons-description">Сыт, здоров,кайфует</p>
+                                    
+                                </div>
+                            </div>
+                        </li>
+                        <li class="room__buttons-btn four">
+                            <div class="room__buttons-background">
+                                <p class="room__buttons-cross">+</p>
+                                <img src="./icons/lie.svg" alt="" class="room__buttons-icon">
+                                <div class="room__buttons-text">
+                                    <div class="room__buttons-title">Лежанка или плед
+                                    </div>
+                                    <p class="room__buttons-description">Питомец будет чувствовать себя в безопасности, если Вы привезете вещи которые пахнут домом
+                                    </p>
+                                    
+                                </div>
+                            </div>
+                        </li>
+                        <li class="room__buttons-btn five">
+                            <div class="room__buttons-background">
+                                <p class="room__buttons-cross">+</p>
+                                <img src="./icons/home.svg" alt="" class="room__buttons-icon">
+                                <div class="room__buttons-text">
+                                    <div class="room__buttons-title">Домик или переноска
+                                    </div>
+                                    <p class="room__buttons-description">Необходимо привезти из дома, но если что можно приобрести у нас</p>
+                                    
+                                </div>
+                            </div>
+                        </li>
+                        <li class="room__buttons-btn six">
+                            <div class="room__buttons-background">
+                                <p class="room__buttons-cross">+</p>
+                                <img src="./icons/clean.svg" alt="" class="room__buttons-icon">
+                                <div class="room__buttons-text">
+                                    <div class="room__buttons-title">Лоток и совок
+                                    </div>
+                                    <p class="room__buttons-description">Наблюдайте за питомцем в любое время суток: нужен только смартфон с доступом в интернет.</p>
+                                    
+                                </div>
+                            </div>
+                        </li>
+                        <li class="room__buttons-btn seven">
+                            <div class="room__buttons-background">
+                                <p class="room__buttons-cross">+</p>
+                                <img src="./icons/food.svg" alt="" class="room__buttons-icon">
+                                <div class="room__buttons-text">
+                                    <div class="room__buttons-title">Миски для еды и воды
+                                    </div>
+                                    <p class="room__buttons-description">Необходимо привезти из дома, так же возьмите и корм, но если хотите приехать налегке, то можно приобрести у нас
+                                    </p>
+                                   
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+
+
+                <section class="advantages" id="advantages">
+                    <h2 class="advantages__title title">
+                        12 причин, почему вашему коту будет комфортно как дома
+                    </h2>
+                    <div class="advantages__cat">
+                        <img src="images/cat-rounded.png" alt="Кот" class="advantages__cat-img" />
+                    </div>
+
+                    <div class="advantages__block">
+
+                        <div class="newAdvantages__item">
+                            <div class="advantages__item-text">
+                                Видеонаблюдение<br/> 24/7
+                            </div>
+                            <div class="advantages__item-round">
+                                <img src="icons/camera.svg" alt="Преимущество" class="advantages__item-icon" />
+                            </div>
+                        </div>
+                        <div class="newAdvantages__item">
+                            <div class="advantages__item-text">
+                                Привычное расписание питания кошки (по указанию хозяина)
+                            </div>
+                            <div class="advantages__item-round">
+                                <img src="icons/calendar.svg" alt="Преимущество" class="advantages__item-icon" />
+                            </div>
+                        </div>
+                        <div class="newAdvantages__item">
+                            <div class="advantages__item-text">
+                                Уборка дважды в день
+                            </div>
+                            <div class="advantages__item-round">
+                                <img src="icons/trash.svg" alt="Преимущество" class="advantages__item-icon" />
+                            </div>
+                        </div>
+                        <div class="newAdvantages__item">
+                            <div class="advantages__item-text">
+                                Договор с ветеринарной клиникой для экстренных обстоятельств
+                            </div>
+                            <div class="advantages__item-round">
+                                <img src="icons/medical.svg" alt="Преимущество" class="advantages__item-icon" />
+                            </div>
+                        </div>
+                        <div class="newAdvantages__item">
+                            <div class="advantages__item-text">
+                                Хорошая система вентиляции
+                            </div>
+                            <div class="advantages__item-round">
+                                <img src="icons/hairdryer.svg" alt="Преимущество" class="advantages__item-icon" />
+                            </div>
+                        </div>
+                        <div class="newAdvantages__item">
+                            <div class="advantages__item-text">
+                                Зоотакси и курьер
+                            </div>
+                            <div class="advantages__item-round">
+                                <img src="icons/car.svg" alt="Преимущество" class="advantages__item-icon" />
+                            </div>
+                        </div>
+                        <div class="newAdvantages__item">
+                            <div class="advantages__item-text">
+                                Гипоаллергенные материалы
+                            </div>
+                            <div class="advantages__item-round">
+                                <img src="icons/first-aid.svg" alt="Преимущество" class="advantages__item-icon" />
+                            </div>
+                        </div>
+                        <div class="newAdvantages__item">
+                            <div class="advantages__item-text">
+                                Прозрачные номера
+                            </div>
+                            <div class="advantages__item-round">
+                                <img src="icons/eye.svg" alt="Преимущество" class="advantages__item-icon" />
+                            </div>
+                        </div>
+                        <div class="newAdvantages__item">
+                            <div class="advantages__item-text">
+                                Разные категории номеров
+                            </div>
+                            <div class="advantages__item-round">
+                                <img src="icons/star.svg" alt="Преимущество" class="advantages__item-icon" />
+                            </div>
+                        </div>
+                        <div class="newAdvantages__item">
+                            <div class="advantages__item-text">
+                                Опытные кото-няни
+                            </div>
+                            <div class="advantages__item-round">
+                                <img src="icons/users.svg" alt="Преимущество" class="advantages__item-icon" />
+                            </div>
+                        </div>
+                        <div class="newAdvantages__item">
+                            <div class="advantages__item-text">
+                                4 вертикальных яруса<br/> для движения и игр
+                            </div>
+                            <div class="advantages__item-round">
+                                <img src="icons/gamepad.svg" alt="Преимущество" class="advantages__item-icon" />
+                            </div>
+                        </div>
+                        <div class="newAdvantages__item">
+                            <div class="advantages__item-text">
+                                Отличные отзывы<br/> в СМИ
+                            </div>
+                            <div class="advantages__item-round">
+                                <img src="icons/messages.svg" alt="Преимущество" class="advantages__item-icon" />
+                            </div>
+                        </div>
+                    
+
+        
+                        <ul class="advantages-list list-one">
+                        <li class="advantages__item ">
+                            <div class="advantages__item-background advantages-one">
+                                <div class="advantages__item-text">
+                                    Видеонаблюдение 24/7
+                                </div>
+                                <div class="advantages__item-round">
+                                    <img src="icons/camera.svg" alt="Преимущество" class="advantages__item-icon" />
+                                </div>
+                            </div>
+                        </li>
+                        <li class="advantages__item ">
+                            <div class="advantages__item-background advantages-two">
+                                <div class="advantages__item-text">Привычное расписание питания кошки (по указанию хозяина)</div>
+                                <div class="advantages__item-round">
+                                <img src="icons/calendar.svg" alt="Преимущество" class="advantages__item-icon" />
+                            </div>
+                            </div>
+                        </li>
+                        <li class="advantages__item">
+                            <div class="advantages__item-background advantages-three">
+                                <div class="advantages__item-text">Уборка дважды в день</div>
+                                <div class="advantages__item-round">
+                                <img src="icons/trash.svg" alt="Преимущество" class="advantages__item-icon" />
+                            </div>
+                            </div>
+                        </li>
+                        <li class="advantages__item">
+                            <div class="advantages__item-background advantages-four">
+                                <div class="advantages__item-text">Разные категории номеров</div>
+                                <div class="advantages__item-round">
+                                <img src="icons/star.svg" alt="Преимущество" class="advantages__item-icon" />                            </div>
+                            </div>
+                        </li>
+
+
+
+                        <li class="advantages__item">
+                            <div class="advantages__item-background advantages-five">
+                                <div class="advantages__item-text">Хорошая система вентиляции</div>
+                                <div class="advantages__item-round">
+                                <img src="icons/hairdryer.svg" alt="Преимущество" class="advantages__item-icon" />                           </div>
+                            </div>
+                        </li>
+                        <li class="advantages__item">
+                            <div class="advantages__item-background advantages-six">
+                                <div class="advantages__item-text">Зоотакси и курьер</div>
+                                <div class="advantages__item-round">
+                                <img src="icons/car.svg" alt="Преимущество" class="advantages__item-icon" />
+                            </div>
+                        </li>
+                        </ul>
+                        <ul class="advantages-list list-two">
+                        
+                        <li class="advantages__item">
+                            <div class="advantages__item-background advantages-seven">
+                                <div class="advantages__item-round">
+                                <img src="icons/first-aid.svg" alt="Преимущество" class="advantages__item-icon" />
+                            </div>
+                                <div class="advantages__item-text">Гипоаллергенные материалы</div>
+                            </div>
+                        </li>
+                        <li class="advantages__item">
+                            <div class="advantages__item-background advantages-eight">
+                                <div class="advantages__item-round">
+                                <img src="icons/eye.svg" alt="Преимущество" class="advantages__item-icon" />
+                            </div>
+                                <div class="advantages__item-text">Прозрачные номера</div>
+                            </div>
+                        </li>
+                        <li class="advantages__item">
+                            <div class="advantages__item-background advantages-nine">
+                                <div class="advantages__item-round">
+                                <img src="icons/gamepad.svg" alt="Преимущество" class="advantages__item-icon" />
+                            </div>
+                                <div class="advantages__item-text">4 вертикальных яруса для движения и игр</div>
+                            </div>
+                        </li>
+                        <li class="advantages__item">
+                            <div class="advantages__item-background advantages-ten">
+                                <div class="advantages__item-round">
+                                <img src="icons/medical.svg" alt="Преимущество" class="advantages__item-icon" />
+                            </div>
+                                <div class="advantages__item-text">Договор с ветеринарной клиникой для экстренных обстоятельств</div>
+                            </div>
+                        </li>
+                        <li class="advantages__item">
+                            <div class="advantages__item-background advantages-eleven">
+                                <div class="advantages__item-round">
+                                <img src="icons/users.svg" alt="Преимущество" class="advantages__item-icon" />
+                            </div>
+                                <div class="advantages__item-text">Опытные кото-няни</div>
+                            </div>
+                        </li>
+                        <li class="advantages__item">
+                            <div class="advantages__item-background advantages-twelve">
+                                <div class="advantages__item-round">
+                                <img src="icons/messages.svg" alt="Преимущество" class="advantages__item-icon" />
+                            </div>
+                                <div class="advantages__item-text">Отличные отзывы в СМИ</div>
+                            </div>
+                        </li>
+                        </ul>
+                    </div>
+                </section>
+
+
+
+
+
+
+
+                <section class="rooms" id="rooms">
+                    <h2 class="rooms__title title">Номера</h2>
+                    <div class="rooms__sale">В периоды 15.04-15.09 и 15.12-15.01 действует сезонная акция 20%</div>
+                    <ul class="rooms-list">
+                        <li class="rooms-item">
+                            <img src="images/room-background.png" alt="Фон мини номера" class="rooms-background" />
+                            <img src="images/mini.png" alt="Мини номер" class="rooms-img img-one" />
+                            <div class="rooms__background">
+                            <h4 class="rooms-title">Мини</h4>
+                            <ul class="rooms__description">
+                                <li class="rooms__description-item">Боксы размером в 2,2 м2</li>
+                                <li class="rooms__description-item">Наблюдение сотрудником целый день</li>
+                                <li class="rooms__description-item">Санитарные работы дважды в сутки</li>
+                                <li class="rooms__description-item">Чистая вода и вкусная еда</li>
+                                <li class="rooms__description-item">Развлечение постояльцев (игры и ласка)</li>
+                            </ul>
+                            <div class="rooms-price"><span>799 руб.</span> 699 руб.</div>
+                            <button class="rooms-button btn-booking-mini">Забронировать</button>
+                        </div>
+                        </li>
+                        <li class="rooms-item">
+                            <img src="images/room-background.png" alt="Фон стандарт номера" class="rooms-background" />
+                            <img src="images/standart.png" alt="Стандарт номер" class="rooms-img img-two" />
+                            <div class="rooms__background">
+                            <h4 class="rooms-title">Стандарт</h4>
+                            <ul class="rooms__description">
+                                <li class="rooms__description-item">Боксы размером в 3,5 м2</li>
+                                <li class="rooms__description-item">Наблюдение сотрудником целый день</li>
+                                <li class="rooms__description-item">Санитарные работы дважды в сутки</li>
+                                <li class="rooms__description-item">Чистая вода и вкусная еда</li>
+                                <li class="rooms__description-item">Развлечение постояльцев (игры и ласка)</li>
+                                <li class="rooms__description-item">Непрерывная видеосвязь</li>
+                            </ul>
+                            <div class="rooms-price"><span>849 руб.</span> 749 руб.</div>
+                            <button class="rooms-button btn-booking-standart">Забронировать</button>
+                        </div>
+                        </li>
+                        <li class="rooms-item">
+                            <img src="images/room-background.png" alt="Фон люкс номера" class="rooms-background" />
+                            <img src="images/lux.png" alt="Люкс номер" class="rooms-img img-three" />
+                            <div class="rooms__background">
+                            <h4 class="rooms-title">Люкс</h4>
+                            <ul class="rooms__description">
+                                <li class="rooms__description-item">Боксы размером в 4,2 м2</li>
+                                <li class="rooms__description-item">Наблюдение сотрудником целый день</li>
+                                <li class="rooms__description-item">Санитарные работы дважды в сутки</li>
+                                <li class="rooms__description-item">Чистая вода и вкусная еда</li>
+                                <li class="rooms__description-item">Развлечение постояльцев (игры и ласка)</li>
+                                <li class="rooms__description-item">Непрерывная видеосвязь</li>
+                                <li class="rooms__description-item">Чистка ушек, вычесывание</li>
+                            </ul>
+                            <div class="rooms-price"><span>1099 руб.</span> 999 руб.</div>
+                            <button class="rooms-button btn-booking-lux">Забронировать</button>
+                        </div>
+                        </li>
+                    </ul>
+                </section>
+
+                <section class="staff" id="staff">
+                    <h2 class="staff__title title">Заботливый персонал</h2>
+                        <div class="staff__slider">
+                            <ul class="staff-list owl-carousel">
+                                <li class="staff-item">
+                                    <img src="./images/staff1.png" alt="Персонал" class="staff-img" />
+                                    <div class="staff-background">
+                                        <p class="staff-name">Максим Браун</p>
+                                        <span class="staff-post">Основатель</span>
+                                    </div>
+                                </li>
+                                <li class="staff-item">
+                                    <img src="./images/staff2.png" alt="Персонал" class="staff-img" />
+                                    <div class="staff-background">
+                                        <p class="staff-name">Алёна Ивановна</p>
+                                        <span class="staff-post">Исполнительный директор</span>
+                                    </div>
+                                </li>
+                                <li class="staff-item">
+                                    <img src="./images/staff3.png" alt="Персонал" class="staff-img" />
+                                    <div class="staff-background">
+                                        <p class="staff-name">Анастасия Андреевна</p>
+                                        <span class="staff-post">Ветеринар</span>
+                                    </div>
+                                </li>
+                                <li class="staff-item">
+                                    <img src="./images/staff4.png" alt="Персонал" class="staff-img" />
+                                    <div class="staff-background">
+                                        <p class="staff-name">Марина Ивановна</p>
+                                        <span class="staff-post">Менеджер</span>
+                                    </div>
+                                </li>
+                                <li class="staff-item">
+                                    <img src="./images/staff5.png" alt="Персонал" class="staff-img" />
+                                    <div class="staff-background">
+                                        <p class="staff-name">Елизавета Васильевна</p>
+                                        <span class="staff-post">Ветеринар</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                </section>
+
+                <section class="questions" id="questions">
+                    <h2 class="questions__title title">Вопросы возникают у всех, и мы стараемся ответить на каждый</h2>
+                        <ul class="questions-list">
+                            <ul class="questions-col col1">
+                            <li class="questions-item">
+                                <div class="questions__problem">
+                                    <div class="questions__problem-text">Как быть, если коту не доводилось встречаться с другими животными?</div>
+                                    <div class="questions__problem-round">
+                                    <img src="./icons/check.svg" alt="Галочка" class="questions__problem-icon" />
+                                </div>
+                                <div class="questions__answer"><div class="questions__answer-text">Конфликтные ситуации на территории гостиницы исключены, т. к. питомцы находятся в изолированных номерах.</div>
+                                    
+                                </div>
+                            </li>
+                            <li class="questions-item">
+                                    <div class="questions__problem">
+                                        <div class="questions__problem-text">Есть ли гарантия, что кот не подцепит заболевание?</div>
+                                        <div class="questions__problem-round">
+                                            <img src="./icons/check.svg" alt="Галочка" class="questions__problem-icon" />
+                                        </div>
+                                        <div class="questions__answer"><div class="questions__answer-text">Да, все животные размещаются отдельно друг от друга, контакты между ними исключены.</div>
+                                  
+                                </div>
+                            </li>
+                            <li class="questions-item">
+                                    <div class="questions__problem">
+                                        <div class="questions__problem-text">Как быстро происходит адаптация к новым условиям?</div>
+                                        <div class="questions__problem-round">
+                                            <img src="./icons/check.svg" alt="Галочка" class="questions__problem-icon" />
+                                        </div>
+                                        <div class="questions__answer"><div class="questions__answer-text">Как правило, от нескольких часов до трёх дней. Животные реагируют на новое место по-разному - одни прячутся в переносках, другие сразу исследуют номер и идут знакомиться с котоняней. Кроме того, влияние оказывают возраст кошки, её характер, количество животных в гостинице.</div>
+                                      
+                                    </div>
+                            </li>
+                        </li>
+                        </ul>
+                                <ul class="questions-col col2">
+                                    <li class="questions-item">
+                                    <div class="questions__problem">
+                                        <div class="questions__problem-text">На какой минимальный срок можно оставить у вас кота?</div>
+                                        <div class="questions__problem-round">
+                                            <img src="./icons/check.svg" alt="Галочка" class="questions__problem-icon" />
+                                        </div>
+                                        <div class="questions__answer"><div class="questions__answer-text">Два дня и одна ночь.</div>
+                                 
+                                </div>
+                            </li>
+                            <li class="questions-item">
+                                    <div class="questions__problem">
+                                        <div class="questions__problem-text">В чем различие между номерами?</div>
+                                        <div class="questions__problem-round">
+                                            <img src="./icons/check.svg" alt="Галочка" class="questions__problem-icon" />
+                                        </div>
+                                        <div class="questions__answer"><div class="questions__answer-text">Они отличаются только размерами. Мы любим кошек и одинаково заботимся о всех наших постояльцах вне зависимости от выбранного хозяином номера.</div>
+                                   
+                                </div>
+                            </li>
+                            <li class="questions-item">
+                                    <div class="questions__problem">
+                                        <div class="questions__problem-text">Как я могу быть в курсе дел моего кота?</div>
+                                        <div class="questions__problem-round">
+                                            <img src="./icons/check.svg" alt="Галочка" class="questions__problem-icon" />
+                                        </div>
+                                        <div class="questions__answer"><div class="questions__answer-text">Можно следить за ним через камеру в номере. Все хозяева получают ежедневные отчеты о состоянии питомцев с фотографиями.</div>
+                                       
+                                    </div>
+                            </li>
+                        </ul>
+                    </ul>
+                </section>
+
+                <section class="booking" id="booking">
+                    <h2 class="booking__title title">Узнать свободные даты заезда</h2>
+                    <div class="booking__block">
+                    <div class="booking__img"><img src="./images/cat-booking.png" alt="Кот" class="booking__img-cat"></div>
+                    <div class="booking__call">
+                        <div class="booking__call-text">Хотите забронировать у нас номер, звоните нам:</div>
+                        <div class="booking__call-number">+7 (999) 999-99-99</div>
+                        <form action="" class="booking__call-form">
+                            <input type="tel" pattern="[7-8]{1}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+                            required class="booking__form-input" placeholder="+7 (___) ___-__-__">
+                            <button class="booking-button btn-modal">Оставить заявку</button>
+                            <div class="booking__radio">
+                            <input type="checkbox" class="booking__radio-round" id="checked" value="yes" name="booking"/>
+                            <label for="checked" class="booking__radio-text">Принимаю    <span>Условия обработки информации</span></label>
+                            <label>
+                        </div>
+                        </form>
+                        <div class="booking__socials"><img src="./icons/telegramm.svg" alt="Телеграмм" class="booking__socials-icon first-icon"><img src="./icons/whatsapp.svg" alt="Ватсап" class="booking__socials-icon"></div>
+                    </div>
+                </div>
+            </div>
+            </section>
+            <section class="modal hidden">
+                <button class="btn-close"><img src="./icons/cross.svg" alt="Закрыть"></button>
+                <div class="modal__block">
+                    <div class="modal__call">
+                        <h2 class="modal__call-title">Укажите ваши актуальные данные</h2>
+                       <div class="modal__call-text">Введите свой номер и мы свяжемся с вами в течении 15 минут</div>
+                    <div class="modal__call-form">
+                        <form action="" class="modal-form">
+                            <input type="tel" pattern="[7-8]{1}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+                            required class="modal__form-input" placeholder="+7 (___) ___-__-__">
+                            <button class="modal__form-button">Оставить заявку</button>
+                            <div class="modal__radio">
+                                <input type="checkbox" class="modal__radio-round" id="checked" value="yes" name="modal"/>
+                                <label for="checked" class="modal__radio-text">Принимаю    <span>Условия обработки информации</span></label>
+                                <label>
+                        </form>
+                    </div>
+                    </div>
+                </div>
+                    <div class="modal__block-img booking">
+                        <img src="./images/modal-cat.png" alt="Кот"  class="modal-img"/>
+                    </div>
+                </div>
+                
+            </section>
+            <div class="overlay hidden"></div>
+            <section class="modal booking-mini hidden booking">
+                <button class="btn-close booking-mini"><img src="./icons/cross.svg" alt="Закрыть"></button>
+                <div class="modal__block booking">
+                    <div class="modal__call booking">
+                        <h2 class="modal__call-title booking">Укажите ваши актуальные данные</h2>
+                       <div class="modal__call-text booking">Введите свой номер и мы свяжемся с вами в течении 15 минут</div>
+                    <div class="modal__call-form booking">
+                        <form action="" class="modal-form booking">
+                            <input type="text" placeholder="ФИО" class="modal__form-input booking">
+                            <input type="text" placeholder="Кличка питомца" class="modal__form-input booking">
+                            <input type="tel" pattern="[7-8]{1}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+                            required class="modal__form-input booking" placeholder="+7 (___) ___-__-__">
+                            <button class="modal__form-button booking">Оставить заявку</button>
+                            <div class="modal__radio booking">
+                                <input type="checkbox" class="modal__radio-round booking" id="checked" value="yes" name="modal"/>
+                                <label for="checked" class="modal__radio-text booking">Принимаю    <span>Условия обработки информации</span></label>
+                                <label>
+                        </form>
+                    </div>
+                    </div>
+                </div>
+                    <div class="modal__block-img booking">
+                        <img src="images/room-background.png" alt="Фон мини номера" class="rooms-background booking mini" />
+                            <img src="images/mini.png" alt="Мини номер" class="rooms-img img-one booking" />
+                            <div class="rooms__background booking">
+                            <h4 class="rooms-title booking">Мини</h4>
+                            <ul class="rooms__description booking">
+                                <li class="rooms__description-item">Боксы размером в 2,2 м2</li>
+                                <li class="rooms__description-item">Наблюдение сотрудником целый день</li>
+                                <li class="rooms__description-item">Санитарные работы дважды в сутки</li>
+                                <li class="rooms__description-item">Чистая вода и вкусная еда</li>
+                                <li class="rooms__description-item">Развлечение постояльцев (игры и ласка)</li>
+                            </ul>
+                            <div class="rooms-price booking"><span>799 руб.</span> 699 руб.</div>
+                    </div>
+                </div>
+                
+            </section>
+            
+            <div class="overlay booking-mini hidden"></div>
+            <section class="modal booking-standart hidden booking">
+                <button class="btn-close booking-standart"><img src="./icons/cross.svg" alt="Закрыть"></button>
+                <div class="modal__block booking">
+                    <div class="modal__call booking">
+                        <h2 class="modal__call-title booking">Укажите ваши актуальные данные</h2>
+                       <div class="modal__call-text booking">Введите свой номер и мы свяжемся с вами в течении 15 минут</div>
+                    <div class="modal__call-form booking">
+                        <form action="" class="modal-form booking">
+                            <input type="text" placeholder="ФИО" class="modal__form-input booking">
+                            <input type="text" placeholder="Кличка питомца" class="modal__form-input booking">
+                            <input type="tel" pattern="[7-8]{1}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+                            required class="modal__form-input booking" placeholder="+7 (___) ___-__-__">
+                            <button class="modal__form-button booking">Оставить заявку</button>
+                            <div class="modal__radio booking">
+                                <input type="checkbox" class="modal__radio-round booking" id="checked" value="yes" name="modal"/>
+                                <label for="checked" class="modal__radio-text booking">Принимаю    <span>Условия обработки информации</span></label>
+                                <label>
+                        </form>
+                    </div>
+                    </div>
+                </div>
+                    <div class="modal__block-img booking">
+                        <img src="images/room-background.png" alt="Фон стандарт номера" class="rooms-background booking" />
+                            <img src="images/standart.png" alt="Стандарт номер" class="rooms-img img-two booking" />
+                            <div class="rooms__background booking">
+                            <h4 class="rooms-title booking">Стандарт</h4>
+                            <ul class="rooms__description booking">
+                                <li class="rooms__description-item">Боксы размером в 3,5 м2</li>
+                                <li class="rooms__description-item">Наблюдение сотрудником целый день</li>
+                                <li class="rooms__description-item">Санитарные работы дважды в сутки</li>
+                                <li class="rooms__description-item">Чистая вода и вкусная еда</li>
+                                <li class="rooms__description-item">Развлечение постояльцев (игры и ласка)</li>
+                                <li class="rooms__description-item">Непрерывная видеосвязь</li>
+                            </ul>
+                            <div class="rooms-price booking"><span>849 руб.</span> 749 руб.</div>
+                        </div>
+                </div>
+                
+            </section>
+            <div class="overlay booking-standart hidden"></div>
+            <section class="modal booking-lux hidden booking">
+                <button class="btn-close booking-lux"><img src="./icons/cross.svg" alt="Закрыть"></button>
+                <div class="modal__block booking">
+                    <div class="modal__call booking">
+                        <h2 class="modal__call-title booking">Укажите ваши актуальные данные</h2>
+                       <div class="modal__call-text booking">Введите свой номер и мы свяжемся с вами в течении 15 минут</div>
+                    <div class="modal__call-form booking">
+                        <form action="" class="modal-form booking">
+                            <input type="text" placeholder="ФИО" class="modal__form-input booking">
+                            <input type="text" placeholder="Кличка питомца" class="modal__form-input booking">
+                            <input type="tel" pattern="[7-8]{1}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+                            required class="modal__form-input booking" placeholder="+7 (___) ___-__-__">
+                            <button class="modal__form-button booking">Оставить заявку</button>
+                            <div class="modal__radio booking">
+                                <input type="checkbox" class="modal__radio-round booking" id="checked" value="yes" name="modal"/>
+                                <label for="checked" class="modal__radio-text booking">Принимаю    <span>Условия обработки информации</span></label>
+                                <label>
+                        </form>
+                    </div>
+                    </div>
+                </div>
+                    <div class="modal__block-img">
+                        <img src="images/room-background.png" alt="Фон люкс номера" class="rooms-background booking" />
+                        <img src="images/lux.png" alt="Люкс номер" class="rooms-img img-three booking" />
+                        <div class="rooms__background booking">
+                        <h4 class="rooms-title booking">Люкс</h4>
+                        <ul class="rooms__description booking">
+                            <li class="rooms__description-item">Боксы размером в 4,2 м2</li>
+                            <li class="rooms__description-item">Наблюдение сотрудником целый день</li>
+                            <li class="rooms__description-item">Санитарные работы дважды в сутки</li>
+                            <li class="rooms__description-item">Чистая вода и вкусная еда</li>
+                            <li class="rooms__description-item">Развлечение постояльцев (игры и ласка)</li>
+                            <li class="rooms__description-item">Непрерывная видеосвязь</li>
+                            <li class="rooms__description-item">Чистка ушек, вычесывание</li>
+                        </ul>
+                        <div class="rooms-price booking"><span>1099 руб.</span> 999 руб.</div>
+                    </div>
+                    </div>
+                </div>
+                
+            </section>
+            
+            <div class="overlay booking-lux hidden"></div>
+            
+        </div>
+        <footer>
+            <div class="footer__background">
+                <div class="footer__contacts">
+                    <ul class="footer__contacts-list">
+                        <li class="footer__contacts-item">
+                            <div class="contacts-name">E-mail:</div>
+                            <div class="contacts-text">sdsdsd@gmail.com</div>
+                        </li>
+                        <li class="footer__contacts-item">
+                            <div class="contacts-name">Звонок бесплатный:</div>
+                            <div class="contacts-text">+7 (999) 999-99-99</div>
+                        </li>
+                        <li class="footer__contacts-item">
+                            <div class="contacts-name">Пн-Вс</div>
+                            <div class="contacts-text">08:00 - 20:00</div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__buttons">
+                    <button class="footer-button btn-modal">Хочу оставить <br> своего котика у вас</button>
+                    <div class="footer__socials">
+                    <img src="./icons/telegramm.svg" alt="Телеграмм" class="footer__buttons-icon">
+                    <img src="./icons/whatsapp.svg" alt="Ватсап" class="footer__buttons-icon">
+                </div>
+                </div>
+            </div>
+        </footer>
+        <script src="./js/slider.js"></script>
+        <script src="./js/room.js"></script>
+        <script src="./js/questions.js"></script>
+        <script src="./js/modal.js"></script>
+        <script src="./js/hamburger.js"></script>
+    </body>
+
+</html>

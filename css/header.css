@@ -1,0 +1,228 @@
+
+.header {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .header__main {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .header__logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .header__logo-text {
+    max-width: 60px;
+    margin: 0 20px;
+    font-size: 16px;
+  }
+  
+  .header__call {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .header__call-block {
+    display: flex;
+    align-items: center;
+  }
+  
+  .call__icon {
+    max-width: 40px;
+    max-height: 40px;
+    margin-right: 10px;
+  }
+  
+  .header__call-text {
+    color: #93979f;
+    font-size: 16px;
+    margin-left: 50px;
+  }
+  
+  .header__call-number {
+    font-size: 24px;
+  }
+  .header__menu-list{
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+  }
+  .header__menu, .rooms__sale {
+    background-color: white;
+    -webkit-box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(1px);
+    border-radius: 5px;
+    margin-top: 15px;
+    height: 60px;
+  }
+  
+  .header__menu-list {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 3em;
+  }
+  
+  .header__tabs-link {
+    color: #93979f;
+  }
+  
+@media screen and (max-width: 768px) {
+  .header__call-number {
+    font-size: 22px;
+  }
+  .header__main {
+    gap: 20px;
+    justify-content: space-between;
+    margin-right: 20px;
+    align-items: center;
+  }
+  .header__menu {
+    max-width: 760px;
+    margin: 0 auto;
+    margin-top: 15px;
+    height: auto;
+  }
+  .header__menu-list {
+    gap: 50px;
+  }
+  .call__icon {
+    width: 30px;
+    height: 30px;
+  }
+  .rooms__sale {
+    padding-top: 0 !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+  @media screen and (max-width:742px){
+    .header__menu--vertical {
+      font-size: 16px;
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      flex-flow: column-reverse;
+      background-color: white;
+      width: 85%;
+      height: 30%;
+      top: 100px;
+      position: fixed;
+      left: -100%;
+      transition: left .3s;
+      z-index: 9999;
+      margin-top: 0px;
+  }
+  .header__menu-list {
+      height: 25%;
+      margin: auto 10px;
+      justify-content: space-around;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0px;
+  }
+
+  .header__tabs-item {
+      margin-bottom: 15px;
+      margin-top: 15px;
+      display: block;
+  }
+  .header__tabs-link--vertical {
+      display: block;
+  }
+  .header__menu--active {
+      left: 25px;
+  }
+  .header__main {
+    justify-content: start;
+  }
+}
+
+  @media screen and (max-width:400px){
+    .header__logo__icon{
+      height: 100px;
+      width: 120px;
+      margin-left: 10px;
+    }
+    .header__logo-text{
+      display: none;
+    }
+    .call__icon{
+      height: 25px;
+      width: 25px;
+    }
+    .header__call-number {
+      font-size:16px;
+    }
+    .header__call-text {
+      font-size: 10px;
+    }
+    .header__button{
+      display: none;
+    }
+    .header__main {justify-content: start;}
+    .header__logo__separator{
+      display: none;
+    }
+    .header__call {
+     margin-left: 10px;
+    }
+    .header__menu--vertical {
+      font-size: 16px;
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      flex-flow: column-reverse;
+      background-color: white;
+      width: 85%;
+      height: 30%;
+      top: 100px;
+      position: fixed;
+      left: -100%;
+      transition: left .3s;
+      z-index: 9999;
+      margin-top: 0px;
+  }
+  .header__menu-list {
+      height: 25%;
+      margin: auto 10px;
+      justify-content: space-around;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+  }
+  .header__tabs-item {
+      margin-bottom: 15px;
+      margin-top: 15px;
+      display: block;
+  }
+  .header__tabs-link--vertical {
+      display: block;
+  }
+  .header__menu--active {
+      left: 25px;
+  }
+ 
+  }
+  @media screen and (max-width:650px){    
+    .header__logo__separator{
+    display: none;
+  }
+  .header__logo-text{
+    display: none;
+  }}
+  

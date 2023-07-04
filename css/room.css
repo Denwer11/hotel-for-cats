@@ -1,0 +1,303 @@
+
+.room{
+    margin: 100px 0;
+  }
+  .room__img{
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    margin-left: -300px;
+    z-index: -5;
+  
+  }
+  .room__buttons{
+    padding-left: 50%;
+  }
+  .room__buttons-btn{
+    content: "";
+    position: relative;
+    font-weight: 300;
+    font-size: 40px;
+    border-radius: 50%;
+    border-bottom: 5px solid #eb9f4d;
+    background: linear-gradient(
+      180deg,
+      rgba(252, 204, 132, 0.4) 0%,
+      #fdaa4e 100%
+    );
+    width: 2em;
+    height: 2em;
+    text-align: center;
+    cursor: pointer;
+  }
+  .room__buttons-cross{
+    position: relative;
+    margin-top: 7px;
+  }
+  .room__buttons-background{
+    background-color: white;
+    width: 1.5em;
+    height: 1.5em;
+    border-radius: 50%;
+    align-items: center;
+    margin: 13px 10px 7px;
+    position: absolute;
+  }
+  .one{
+  left: 4em;
+  top: 1.2em;
+  }
+  .two{
+  left: -8em;
+  top: 1.2em;
+  }
+  
+  .three{
+    left: -3em;
+    top: 1.2em;
+  }
+  
+  .four{
+    left: -6em;
+    top: 1.2em;
+  }
+  .five{
+    left: -7em;
+    top: 3.2em;
+  }
+  
+  .six{
+    left: 1.7em;
+    top: 0.7em;
+  }
+  
+  .seven{
+    left: 3em;
+    top: 1.2em;
+  }
+.room__buttons-text{
+  display: none;
+}
+.active-text{
+  display: block;
+  font-family: "Montserrat", sans-serif;
+    color: #735117;
+    width: 340px;
+    text-align: center;
+    margin-left: 35px;
+    margin-top: -80px;
+    background: linear-gradient(
+    180deg,
+    rgba(255, 219, 166, 1) 0%,
+    #fdaa4e 100%);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    height: 150px;
+    align-items: center;
+    z-index: -1;
+    justify-content: center;
+    position: absolute;
+    box-shadow: 0px 5px 15px rgba(207,207,207, 0.25);
+}
+
+.non-active{
+  display: none;
+}
+
+.active-back{
+  background: linear-gradient(
+    180deg,
+    rgba(255, 219, 166, 1) 0%,
+    #fdaa4e 100%);
+}
+
+.room__buttons-description{
+  font-size: 12px;
+  width: 220px;
+}
+
+.room__buttons-title{
+  font-size: 16px;
+  font-weight: bold;
+  text-align: left;
+}
+
+.active-btn{
+  background: white;
+  border-bottom: 5px solid white;
+}
+
+.room__buttons-btn.two .active-text{
+  margin-left: -325px;
+}
+
+.room__buttons-btn.three .active-text{
+  margin-left: -325px;
+}
+
+.room__buttons-btn.four .active-text{
+  margin-left: -325px;
+}
+.room__buttons-btn.five .active-text{
+  margin-left: -325px;
+}
+.room__buttons-icon{
+  display: none;
+}
+
+.active-icon{
+  display: block;
+  width: 50px;
+  height: 50px;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+
+@media screen and (max-width:768px) {
+  .room {
+    margin: 0;
+    position: relative;
+  }
+  .room__img {
+    position: relative;
+    left: 0;
+    margin-left: 0;
+  }
+  .room__buttons {
+    position: absolute;
+    top: 0;
+    left: 40px;
+  }
+  .room__buttons-btn.one .active-text{
+    margin-left: -300px;
+  }
+  
+  .room__buttons-btn.six .active-text{
+    margin-left: -300px;
+  }
+  
+  .room__buttons-btn.seven .active-text{
+    margin-left: -300px;
+  }
+  .room__buttons-btn.five .active-text{
+    margin-left: 20px;
+  }
+  .room__buttons-btn.four .active-text{
+    margin-left: 25px;
+  }
+  .room__buttons-btn.two .active-text{
+    margin-left: 25px;
+  }
+  
+  .room__buttons-btn.three .active-text{
+    margin-left: -300px;
+  }
+}
+
+@media screen and (max-width:400px){
+  .room__img {
+    margin-left: 0;
+  }
+  .room__buttons {
+    left: 0;
+  }
+  .room__img-back{ width: 300px; height: 400px;}
+  .room__buttons-btn{
+    width: 50px;
+    height: 50px;
+  }
+  .room__buttons-background{
+    width: 35px;
+    height: 35px;
+    margin: 10px 8px 7px;
+  }
+  .room__buttons-cross{
+    font-size: 30px;
+    font-weight: 200;
+    margin: 0;
+    padding: 0;
+  }
+  .one{
+    left: 3em;
+    top: 0.8em;
+    }
+    .two{
+    left: -4em;
+    top: 0.5em;
+    }
+    
+    .three{
+      left: -1em;
+      top: 0.7em;
+    }
+    
+    .four{
+      left: -3em;
+      top: 0.6em;
+    }
+    .five{
+      left: -3.5em;
+      top: 1.5em;
+    }
+    
+    .six{
+      left: 1.5em;
+      top: -0.5em;
+    }
+    
+    .seven{
+      left: 2.5em;
+      top: -0.5em;
+    }
+    .room__buttons-btn .active-text{
+      margin-left: 20px;
+    }
+    
+    
+.room__buttons-btn.one .active-text{
+  margin-left: -240px;
+}
+
+.room__buttons-btn.six .active-text{
+  margin-left: -240px;
+}
+
+.room__buttons-btn.seven .active-text{
+  margin-left: -240px;
+}
+.room__buttons-btn.five .active-text{
+  margin-left: 20px;
+}
+.room__buttons-btn.four .active-text{
+  margin-left: 25px;
+}
+.room__buttons-btn.two .active-text{
+  margin-left: 25px;
+}
+
+.room__buttons-btn.three .active-text{
+  margin-left: -240px;
+}
+
+.active-text{
+    width: 250px;
+    margin-top: -60px;
+    height: 100px;
+}
+
+.room__buttons-description{
+  font-size: 10px;
+  width: 220px;
+}
+
+.room__buttons-title{
+  font-size: 13px;
+}
+.room__buttons-icon{
+  width: 25px;
+  height: 35px;
+  margin-top: 0;
+}
+}
